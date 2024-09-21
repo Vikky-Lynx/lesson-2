@@ -12,7 +12,7 @@ body {
 
 section {
     background: #25e9a7;
-    height: 100vh;
+    min-height: 100vh;
     padding: 30px 20px 20px 30px;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ section {
 
 .card {
     width: 1170px;
-    height: 800px;
+    min-height: 800px;
     background: #4df0ba;
     box-shadow: 20px 20px 40px 0px rgba(8, 46, 141, 0.25);
     padding: 60px 40px 40px 70px;
@@ -52,7 +52,9 @@ section {
 }
 
 .img {
+    height: 70%;
     border-radius: 25%;
+    margin-right: 40px;
     margin-bottom: 20px;
 }
 
@@ -65,10 +67,12 @@ section {
 }
 
 .aboutGame {
+    background-color: hsl(165, 72%, 46%);
     width: 110px;
     color: rgba(black);
     font-size: 20px;
     font-weight: 500;
+    text-decoration-style: initial;
     letter-spacing: 0.14px;
     border: none;
     margin-top: 20px;
@@ -82,26 +86,36 @@ section {
 }
 
 .super-button {
-    background-color: hsl(180, 90%, 46%);
-    box-shadow: 8px 8px 16px 0px rgba(136, 238, 213, 0.25);
-    height: 30px;
-    width: 10%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: hsl(165, 72%, 46%);
     border-radius: 25%;
     color: black;
+    text-align: center;
+    text-decoration-style: initial;
     margin-top: 20px;
+    margin-left: 15px;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.super-button:hover{
-    box-shadow: 8px 8px 16px 0px rgba(8, 46, 141, 0.25);
+.super-button:hover {
+    box-shadow: 8px 8px 16px 0px rgba(48, 86, 180, 0.25);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 14px;
 }
 
 .img-wrapper {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .wrapper {
@@ -110,4 +124,41 @@ section {
 
 .wrapper > div {
     flex-grow: 1;
+}
+
+@media screen and (max-width: 1440px) {
+    .card {
+        width: 690px;
+        flex-direction: column;
+        margin: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+    width: 300px;
+    }
+    .left {
+        min-width: auto;
+    }
+    .img {
+        width: 150px;
+    }
+    .main-title {
+        font-size: 34px;
+    }
+    .text {
+        font-size: 14px;
+        margin-bottom: 55px;
+    }
+    .feedback {
+        font-size: 14px;
+        margin-top: 50px;
+    }
+    .aboutGame {
+        margin-top: 65px;
+    }
+    .super-button {
+        margin-top: 65px;
+    }
 }
