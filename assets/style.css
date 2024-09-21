@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: normal;
+    line-height: normal;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+section {
+    background: #25e9a7;
+    height: 100vh;
+    padding: 30px 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main-title {
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(28, 5, 90);
+    font-family: "Sofadi One", system-ui;
+    letter-spacing: 0.16px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.text {
+    color: rgba(black);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 1170px;
+    height: 800px;
+    background: #4df0ba;
+    box-shadow: 20px 20px 40px 0px rgba(8, 46, 141, 0.25);
+    padding: 60px 40px 40px 70px;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    border-radius: 25%;
+    margin-bottom: 20px;
+}
+
+.feedback {
+    color: rgb(28, 5, 90);
+    font-family: "Sofadi One", system-ui;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.16px;
+}
+
+.aboutGame {
+    width: 110px;
+    color: rgba(black);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.aboutGame:hover{
+    box-shadow: 8px 8px 16px 0px rgba(8, 46, 141, 0.25);
+}
+
+.super-button {
+    background-color: hsl(180, 90%, 46%);
+    box-shadow: 8px 8px 16px 0px rgba(136, 238, 213, 0.25);
+    height: 30px;
+    width: 10%;
+    border-radius: 25%;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.super-button:hover{
+    box-shadow: 8px 8px 16px 0px rgba(8, 46, 141, 0.25);
+}
+
+.img-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper > div {
+    flex-grow: 1;
+}
